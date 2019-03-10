@@ -1,4 +1,4 @@
-#Weather #Teller
+#Weather Teller
 
 Get the weather condition for every location you demand.
 
