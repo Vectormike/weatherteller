@@ -9,8 +9,10 @@ const API_KEY = '60904ad34cc4a921e9b3bcaccc9529f4';
 
 class App extends Component {
 
-  componentDidMount(){
-
+  async componentDidMount(){
+    const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Uyo&APPID=60904ad34cc4a921e9b3bcaccc9529f4')  
+    const data = await response.json()
+    console.log(data)
   }
 
   render() {
