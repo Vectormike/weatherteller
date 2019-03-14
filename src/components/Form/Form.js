@@ -1,11 +1,19 @@
 import React from 'react';
 
-const Form = () => {
+const Form = ({getWeather}) => {
     return (
         <div>
-            <input type='text' name='city' placeholder='City'/>
-            <input type='text' name='country' placeholder='Country'/>
-            <button type='submit'>Search</button>
+            <input 
+            type='text' 
+            name='city' 
+            placeholder='City'
+            
+            />
+            <button 
+            type='submit'
+            onSubmit={getWeather}
+            >Search
+            </button>
         </div>
     )
 } 
