@@ -1,17 +1,17 @@
 import React from 'react';
 
-const Form = ({getWeather}) => {
+const Form = ({onInputChange, onButtonSubmit}) => {
     return (
         <div>
             <input 
             type='text' 
             name='city' 
             placeholder='City'
-            
+            onChange={onInputChange}
             />
             <button 
             type='submit'
-            onSubmit={getWeather}
+            onClick={onButtonSubmit}
             >Search
             </button>
         </div>
