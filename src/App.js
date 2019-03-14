@@ -10,8 +10,8 @@ const api = '60904ad34cc4a921e9b3bcaccc9529f4';
 class App extends Component {
 
   state = {
-    input: ''
-    
+    input: '',
+    location: ''
   }
 
   async componentDidMount(){
@@ -23,17 +23,21 @@ class App extends Component {
   //Input from the form by the user sets to a state
   onInputChange = (e) => {
     console.log(e.target.value)
+    this.setState({location: e.target.value})
   }
 
+  //Button click picks location from its state and gets the weather
   onButtonSubmit = (e) => {
     console.log(e.target.value)
+    
   } 
 
   render() {
     return (
       <div className="App">
         <Title/>
-        <Form getWeather={this.getWeather()}/>
+        <Form 
+        onInputChange={this.onInputChange}/>
         <Weather/>
       </div>
     );
