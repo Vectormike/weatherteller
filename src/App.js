@@ -5,7 +5,8 @@ import Weather from './components/Weather/Weather';
 import './App.css';
 
 
-const api = '60904ad34cc4a921e9b3bcaccc9529f4';
+const api = '184eeddb6d9ee109f6cf62b5ddd96170';
+var location;
 
 class App extends Component {
 
@@ -16,22 +17,33 @@ class App extends Component {
 
   //Input from the form by the user sets to a state
   onInputChange = (e) => {
-    console.log(e.target.value)
     this.setState({location: e.target.value})
   }
 
   //Button click picks location from its state and gets the weather
   onButtonSubmit = (e) => {
-    console.log(e.target.value)
-    
+    location = this.state.location
+    console.log(location)
   } 
+
+  async componentDidMount(){
+    console.log(`location`)
+    
+    const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${api}`)  
+    const data = await response.json()
+    console.log(data)
+  }
+
+  
 
   render() {
     return (
       <div className="App">
         <Title/>
         <Form 
-        onInputChange={this.onInputChange}/>
+          onInputChange={this.onInputChange}
+          onButtonSubmit={this.onButtonSubmit}
+        />
         <Weather/>
       </div>
     );
