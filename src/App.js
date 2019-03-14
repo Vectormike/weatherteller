@@ -35,11 +35,14 @@ class App extends Component {
   async componentDidMount(){
     try {
       const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${loc}&APPID=${api}`)  
-      const data = await response.json()
-      console.log(`Response goes here:`, data)
+      if(!response.ok) {
+        throw Error(response.statusText);
+      }
+      const data = await response.json();
+      console.log(`Response goes here:`, data);
     } 
     catch(error) {
-      console.log(error)
+      console.log(error);
     } 
   }
 
