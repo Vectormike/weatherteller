@@ -9,13 +9,23 @@ const api = '60904ad34cc4a921e9b3bcaccc9529f4';
 
 class App extends Component {
 
+  state = {
+    input: ''
+    
+  }
+
   async componentDidMount(){
     const response = await fetch('http://api.openweathermap.org/data/2.5/weather?q=Uyo&APPID={api}')  
     const data = await response.json()
     console.log(data)
   }
 
-  getWeather = (e) => {
+  //Input from the form by the user sets to a state
+  onInputChange = (e) => {
+    console.log(e.target.value)
+  }
+
+  onButtonSubmit = (e) => {
     console.log(e.target.value)
   } 
 
