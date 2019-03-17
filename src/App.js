@@ -29,19 +29,9 @@ J
     console.log(this.state.location))
   } 
   
+  
   async componentDidMount(){
-    try {
-      console.log(this.state.location)
-      const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&APPID=${api}`)  
-      if(!response.ok) {
-        throw Error(response.statusText);
-      }
-      const data = await response.json();
-      console.log(`Response goes here:`, data);
-    } 
-    catch(error) {
-      console.log(error);
-    } 
+    
   }
 
   
