@@ -12,40 +12,42 @@ class App extends Component {
     super()
     
     this.state = {
-      input: '',
-      location: ''
+      input: ''
     }
   
   }
 J
-  //Input from the form by the user sets to a state
-  onInputChange = (e) => {
-    this.setState({input: e.target.value})
-  }
-
-  //Button click picks location from its state and gets the weather
-  onButtonSubmit = (e) => {
-    this.setState({location: this.state.input}, () =>
-    console.log(this.state.location))
-  } 
-  
-  
-  getWeather = async () => {
+ 
+  getWeather = async (location) => {
     try {	
-      console.log(this.state.location)	
-      const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&APPID=${api}`)  		
-      const data = await response.json();	
+      const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${api}`)  
+      console.log(this.state.location)		
+      const data = await res.json();	
       console.log(`Response goes here:`, data);	
+      this.setState({weather: {
+
+      }})
     } 	
    catch(error) {	
      console.log(error);	
    } 
   }
 
-  async componentDidMount(){
-
+  componentDidMount(){
+    this.getWeather();
   }
 
+  //Input from the form by the user sets to a state
+  onInputChange = (e) => {
+    this.setState({input: e.target.value})
+  }
+
+  //Button click picks location from its state and gets the weather
+  onButtonSubmit = () => {
+    this.getWeather(this.state.input)
+  } 
+  
+  
   
 
   render() {
