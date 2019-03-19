@@ -30,8 +30,20 @@ J
   } 
   
   
+  getWeather = async () => {
+    try {	
+      console.log(this.state.location)	
+      const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${this.state.location}&APPID=${api}`)  		
+      const data = await response.json();	
+      console.log(`Response goes here:`, data);	
+    } 	
+   catch(error) {	
+     console.log(error);	
+   } 
+  }
+
   async componentDidMount(){
-    
+
   }
 
   
