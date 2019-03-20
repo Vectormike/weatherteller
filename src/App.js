@@ -27,9 +27,11 @@ class App extends Component {
       const data = await res.json();	
       console.log(`Response goes here:`, data);	
       this.setState({
-        
+        weather: data.weather,
+        wind: data.wind,
+        sys: data.sys
       })
-      console.log(this.state.wind)
+      console.log(this.state.weather)
    
     } 	
     catch(error) {	
