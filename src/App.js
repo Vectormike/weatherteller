@@ -29,7 +29,8 @@ class App extends Component {
       this.setState({
         weather: data.weather,
         wind: data.wind,
-        sys: data.sys
+        sys: data.sys,
+        name: data.name
       })
       console.log(this.state.weather)
    
@@ -65,6 +66,10 @@ class App extends Component {
         <Form 
           onInputChange={this.onInputChange}
           onButtonSubmit={this.onButtonSubmit}
+          weather={this.state.weather}
+          degree={this.state.wind}
+          country={this.state.sys}
+          city={this.state.name}
         />
         <Weather/>
       </div>
