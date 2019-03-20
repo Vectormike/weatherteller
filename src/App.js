@@ -66,12 +66,13 @@ class App extends Component {
         <Form 
           onInputChange={this.onInputChange}
           onButtonSubmit={this.onButtonSubmit}
+        />
+        <Weather
           weather={this.state.weather}
           degree={this.state.wind}
           country={this.state.sys}
           city={this.state.name}
         />
-        <Weather/>
       </div>
     );
   }
