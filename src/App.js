@@ -12,30 +12,31 @@ class App extends Component {
     super()
     
     this.state = {
-      input: ''
+      input: ``,
+      degree: ``,
+      city: ``,
+      country: ``,
+      description: ``
     }
-  
   }
-J
+
  
   getWeather = async (location) => {
     try {	
       const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${api}`)  
-      console.log(this.state.location)		
       const data = await res.json();	
       console.log(`Response goes here:`, data);	
-      this.setState({weather: {
-
-      }})
+      this.setState({ 
+      })
+      console.log(this.state.details)
+   
     } 	
-   catch(error) {	
+    catch(error) {	
      console.log(error);	
    } 
   }
 
-  componentDidMount(){
-    this.getWeather();
-  }
+
 
   //Input from the form by the user sets to a state
   onInputChange = (e) => {
@@ -47,6 +48,10 @@ J
     this.getWeather(this.state.input)
   } 
   
+
+  componentDidMount(){
+    this.getWeather();
+  }
   
   
 
