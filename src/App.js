@@ -13,10 +13,10 @@ class App extends Component {
     
     this.state = {
       input: ``,
-      degree: ``,
-      city: ``,
-      country: ``,
-      description: ``
+      weather: [],
+      wind: {},
+      sys: {},
+      name: ``
     }
   }
 
@@ -26,9 +26,10 @@ class App extends Component {
       const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${api}`)  
       const data = await res.json();	
       console.log(`Response goes here:`, data);	
-      this.setState({ 
+      this.setState({
+        
       })
-      console.log(this.state.details)
+      console.log(this.state.wind)
    
     } 	
     catch(error) {	
