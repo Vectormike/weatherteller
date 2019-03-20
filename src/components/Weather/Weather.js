@@ -1,8 +1,10 @@
 import React from 'react'
 
-const Weather = () => {
+const Weather = ({weather, degree, country, city}) => {
     return (
-        <div>Weather Component</div>
+        <div>
+            
+        </div>
     )
 }
 
