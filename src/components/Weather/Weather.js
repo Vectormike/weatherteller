@@ -1,8 +1,9 @@
 import React from 'react'
 
-const Weather = ({weather, degree, country, city, description}) => {
+const Weather = ({icon, weather, degree, country, city, description}) => {
     return (
         <div>
+            <img src={`http://openweathermap.org/img/w/${icon}.png`} alt={`Weather Icon`}/>
             <p>{weather}</p>
             <p>{degree} in {city}, {country}</p>
             <p>{description}</p>
