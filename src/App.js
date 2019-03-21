@@ -36,7 +36,7 @@ class App extends Component {
         name: data.name,
         description: data.weather[0].description
       })
-      console.log(this.state.weather)
+      console.log(this.state.icon)
    
     } 	
     catch(error) {	
