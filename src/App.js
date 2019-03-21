@@ -13,10 +13,11 @@ class App extends Component {
     
     this.state = {
       input: ``,
-      weather: [],
+      condition: ``,
       degree: ``,
-      sys: {},
-      name: ``
+      sys: ``,
+      name: ``,
+      description: ``
     }
   }
 
@@ -27,12 +28,13 @@ class App extends Component {
       const data = await res.json();	
       console.log(`Response goes here:`, data);	
       this.setState({
-        weather: data.weather,
+        condition: data.weather[0].main,
         degree: data.wind.deg,
-        sys: data.sys,
-        name: data.name
+        sys: data.sys.country,
+        name: data.name,
+        description: data.weather[0].description
       })
-      console.log(this.state.degree)
+      console.log(this.state.weather)
    
     } 	
     catch(error) {	
@@ -72,6 +74,7 @@ class App extends Component {
           degree={this.state.degree}
           country={this.state.sys}
           city={this.state.name}
+          description={this.state.description}
         />
       </div>
     );
