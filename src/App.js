@@ -14,7 +14,7 @@ class App extends Component {
     this.state = {
       input: ``,
       weather: [],
-      wind: {},
+      degree: ``,
       sys: {},
       name: ``
     }
@@ -28,11 +28,11 @@ class App extends Component {
       console.log(`Response goes here:`, data);	
       this.setState({
         weather: data.weather,
-        wind: data.wind,
+        degree: data.wind.deg,
         sys: data.sys,
         name: data.name
       })
-      console.log(this.state.weather)
+      console.log(this.state.degree)
    
     } 	
     catch(error) {	
@@ -69,7 +69,7 @@ class App extends Component {
         />
         <Weather
           weather={this.state.weather}
-          degree={this.state.wind}
+          degree={this.state.degree}
           country={this.state.sys}
           city={this.state.name}
         />
