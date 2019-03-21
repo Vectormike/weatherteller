@@ -13,6 +13,7 @@ class App extends Component {
     
     this.state = {
       input: ``,
+      icon: ``,
       condition: ``,
       degree: ``,
       sys: ``,
@@ -28,6 +29,7 @@ class App extends Component {
       const data = await res.json();	
       console.log(`Response goes here:`, data);	
       this.setState({
+        icon: data.weather[0].icon,
         condition: data.weather[0].main,
         degree: data.wind.deg,
         sys: data.sys.country,
@@ -70,6 +72,7 @@ class App extends Component {
           onButtonSubmit={this.onButtonSubmit}
         />
         <Weather
+          icon={this.state.icon}
           weather={this.state.weather}
           degree={this.state.degree}
           country={this.state.sys}
