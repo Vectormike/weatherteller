@@ -1,19 +1,11 @@
-// Title font
-@import url('https://fonts.googleapis.com/css?family=Germania+One');
-
-//Weather font
 @import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300');
-
-
-$fontTitle: 'Germania One', cursive;
 
 $fontWeather: 'Open Sans Condensed', sans-serif;
 
-.title-component {
-    font-family: $fontTitle;
-}
 
 
-.weather-components {
+
+body {
     font-family: $fontWeather;
+    background-color: #80ABFF;
 }
