@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Title from './components/Title/Title';
 import Form from './components/Form/Form';
 import Weather from './components/Weather/Weather';
-import './App.css';
+import './App.scss';
 
 
 const api = '184eeddb6d9ee109f6cf62b5ddd96170';
@@ -66,12 +66,16 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Title/>
+        <Title
+          className="title-component"
+        />
         <Form 
+          className="form-component"
           onInputChange={this.onInputChange}
           onButtonSubmit={this.onButtonSubmit}
         />
         <Weather
+          className="weather-component"
           icon={this.state.icon}
           weather={this.state.weather}
           degree={this.state.degree}
