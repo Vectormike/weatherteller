@@ -66,23 +66,25 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Title
-          className="title-component"
-        />
-        <Form 
-          className="form-component"
-          onInputChange={this.onInputChange}
-          onButtonSubmit={this.onButtonSubmit}
-        />
-        <Weather
-          className="weather-component"
-          icon={this.state.icon}
-          weather={this.state.weather}
-          degree={this.state.degree}
-          country={this.state.sys}
-          city={this.state.name}
-          description={this.state.description}
-        />
+        <div className="app">
+          <Title
+            className="title-component"
+          />
+          <Form 
+            className="form-component"
+            onInputChange={this.onInputChange}
+            onButtonSubmit={this.onButtonSubmit}
+          />
+          <Weather
+            className="weather-component"
+            icon={this.state.icon}
+            weather={this.state.weather}
+            degree={this.state.degree}
+            country={this.state.sys}
+            city={this.state.name}
+            description={this.state.description}
+          />
+        </div>
       </div>
     );
   }
