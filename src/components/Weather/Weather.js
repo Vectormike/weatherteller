@@ -1,4 +1,5 @@
 import React from 'react'
+import './Weather.scss';
 
 const Weather = ({icon, weather, degree, country, city, description}) => {
     return (
