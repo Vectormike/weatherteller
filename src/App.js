@@ -64,6 +64,21 @@ class App extends Component {
   
 
   render() {
+
+    let res;
+
+    (this.state.input.length === 0) ?
+    res = <p>Hi!</p>:
+    res =   <Weather
+    className="weather-component"
+    icon={this.state.icon}
+    weather={this.state.weather}
+    degree={this.state.degree}
+    country={this.state.sys}
+    city={this.state.name}
+    description={this.state.description}
+  />
+
     return (
       <div className="App">
         <div className="app">
@@ -75,15 +90,7 @@ class App extends Component {
             onInputChange={this.onInputChange}
             onButtonSubmit={this.onButtonSubmit}
           />
-          <Weather
-            className="weather-component"
-            icon={this.state.icon}
-            weather={this.state.weather}
-            degree={this.state.degree}
-            country={this.state.sys}
-            city={this.state.name}
-            description={this.state.description}
-          />
+          {res} 
         </div>
       </div>
     );
