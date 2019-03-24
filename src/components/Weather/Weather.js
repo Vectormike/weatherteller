@@ -5,11 +5,12 @@ const Weather = ({icon, weather, degree, country, city, description}) => {
     
     return (
         <div>
-            <img src={`http://openweathermap.org/img/w/${icon}.png`} alt={`Weather Icon`}/>
-            
-            <p>{weather}</p>
-            <p>{degree} in {city}, {country}</p>
-            <p>{description}</p>
+            <img className="icon" src={`http://openweathermap.org/img/w/${icon}.png`} alt={`Weather Icon`}/>
+            <div className="res">
+                <p>{weather}</p>
+                <p>{degree} in {city}, {country}</p>
+                <p>{description}</p>
+            </div>
         </div>
     )
 }
