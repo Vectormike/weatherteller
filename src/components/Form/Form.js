@@ -11,14 +11,14 @@ const Form = ({onInputChange, onButtonSubmit}) => {
                 <fieldset className="cf bn ma0 pa0">
                     <div className="cf">
                         <input 
-                        className="f6 bn fl black-80 bg-light-gray pa3 lh-solid w-80-l br2"
-                        type='text' 
-                        name='city' 
-                        placeholder='City or Country'
-                        onChange={onInputChange}
+                            className="f6 bn fl black-80 bg-light-gray pa3 w-80-l br2"
+                            type='text' 
+                            name='city' 
+                            placeholder='City or Country'
+                            onChange={onInputChange}
                         />
                         <button 
-                        className="grow f6 f5-l fl pv3 tc bn bg-near-black white w-20-l br2 br--right-ns"
+                        className="dim f6 fl pv3 tc bn bg-near-black white w-20-l br2"
                         type='submit'
                         onClick={onButtonSubmit}
                         > Search
