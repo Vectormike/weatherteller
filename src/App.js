@@ -25,7 +25,7 @@ class App extends Component {
  
   getWeather = async (location) => {
     try {	
-      const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${api}`)  
+      const res = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&APPID=${api}&units=metric`)  
       const data = await res.json();	
       console.log(`Response goes here:`, data);	
       this.setState({
@@ -55,6 +55,12 @@ class App extends Component {
   onButtonSubmit = () => {
     this.getWeather(this.state.input)
   } 
+
+  onKeyPress = (event) => {
+		if(event.keyCode === 13 || event.charCode ===13) {
+      this.getWeather(this.state.input)
+		}
+	}        
   
 
   componentDidMount(){
