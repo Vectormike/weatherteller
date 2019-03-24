@@ -4,7 +4,7 @@ import './Title.scss'
 const Title = () => {
     return (
         <div>
-            Weather Teller
+            <p className="f3 underline b">Weather Teller</p>
         </div>
     )
 }
