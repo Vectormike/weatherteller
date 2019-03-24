@@ -4,7 +4,7 @@ const Form = ({onInputChange, onButtonSubmit}) => {
     return (
         <div className="pa3">
             <div style={{
-                backgroundColor: '#EA9984'
+                backgroundColor: '#DCBF54'
 
             }} 
             className="shadow-5 bg-gray mw7 center pa4 br3">
