@@ -30,8 +30,8 @@ class App extends Component {
       console.log(`Response goes here:`, data);	
       this.setState({
         icon: data.weather[0].icon,
+        temp: data.main.temp,
         condition: data.weather[0].main,
-        degree: data.wind.deg,
         sys: data.sys.country,
         name: data.name,
         description: data.weather[0].description
@@ -74,12 +74,12 @@ class App extends Component {
     let res;
 
     (this.state.input.length === 0) ?
-    res = <p>Hi!</p>:
+    res = <p></p>:
     res =   <Weather
     className="weather-component"
     icon={this.state.icon}
-    weather={this.state.weather}
-    degree={this.state.degree}
+    weather={this.state.condition}
+    degree={this.state.temp}
     country={this.state.sys}
     city={this.state.name}
     description={this.state.description}
