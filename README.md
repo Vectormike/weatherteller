@@ -21,5 +21,5 @@ npm run build
 ```
 
 However, if you enjoyed this and want to support me to build more, please buy me a book on Software Development.
-
+..
 - [![Buy me a book][badge_amazon]][amazon]—I love books! I will remember you after years if you buy me one. :grin: :book:
