@@ -7,9 +7,9 @@ const Weather = ({icon, weather, degree, country, city, description}) => {
         <div>
             <img className="icon" src={`http://openweathermap.org/img/w/${icon}.png`} alt={`Weather Icon`}/>
             <div className="res">
-                <p>{weather}</p>
-                <p>{degree} in {city}, {country}</p>
-                <p>{description}</p>
+                <p className="f4">{weather}</p>
+                <p className="f4">{degree}°C in {city}, {country}</p>
+                <p className="f4">{description}</p>
             </div>
         </div>
     )
