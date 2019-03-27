@@ -3,12 +3,11 @@
 Get the weather condition for every location you demand.
 
 
-
 > A weather app built with React.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## :book: Installation
+## Installation
 
 ```sh
 git clone https://github.com/Vectormike40/Weather_Teller.git/
