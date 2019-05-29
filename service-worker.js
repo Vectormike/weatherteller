@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/Weather_Teller/precache-manifest.44d0d6fa15f637b30ec04297cb29b126.js"
+  "/Vectormike40/Weather_Teller/precache-manifest.f2efef6761986c9a50b07865c9dbf967.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/Weather_Teller/index.html", {
+workbox.routing.registerNavigationRoute("/Vectormike40/Weather_Teller/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
