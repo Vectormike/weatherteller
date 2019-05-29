@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/weatherteller/static/css/main.e78b7059.chunk.css",
-    "main.js": "/weatherteller/static/js/main.e5fde0d8.chunk.js",
-    "main.js.map": "/weatherteller/static/js/main.e5fde0d8.chunk.js.map",
+    "main.js": "/weatherteller/static/js/main.6229e9f8.chunk.js",
+    "main.js.map": "/weatherteller/static/js/main.6229e9f8.chunk.js.map",
     "runtime~main.js": "/weatherteller/static/js/runtime~main.ac3cbe8f.js",
     "runtime~main.js.map": "/weatherteller/static/js/runtime~main.ac3cbe8f.js.map",
     "static/css/2.31dafeb2.chunk.css": "/weatherteller/static/css/2.31dafeb2.chunk.css",
     "static/js/2.d4aeacc4.chunk.js": "/weatherteller/static/js/2.d4aeacc4.chunk.js",
     "static/js/2.d4aeacc4.chunk.js.map": "/weatherteller/static/js/2.d4aeacc4.chunk.js.map",
     "index.html": "/weatherteller/index.html",
-    "precache-manifest.98add75a5da287502f634bb3b5a23145.js": "/weatherteller/precache-manifest.98add75a5da287502f634bb3b5a23145.js",
+    "precache-manifest.b9237a8828e2dc756dbbcee887dc0165.js": "/weatherteller/precache-manifest.b9237a8828e2dc756dbbcee887dc0165.js",
     "service-worker.js": "/weatherteller/service-worker.js",
     "static/css/2.31dafeb2.chunk.css.map": "/weatherteller/static/css/2.31dafeb2.chunk.css.map",
     "static/css/main.e78b7059.chunk.css.map": "/weatherteller/static/css/main.e78b7059.chunk.css.map"
