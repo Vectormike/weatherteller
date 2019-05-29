@@ -1,15 +1,15 @@
 {
-  "main.css": "/Vectormike40/Weather_Teller/static/css/main.a4d83100.chunk.css",
-  "main.js": "/Vectormike40/Weather_Teller/static/js/main.15067157.chunk.js",
-  "main.js.map": "/Vectormike40/Weather_Teller/static/js/main.15067157.chunk.js.map",
-  "runtime~main.js": "/Vectormike40/Weather_Teller/static/js/runtime~main.301e3dc2.js",
-  "runtime~main.js.map": "/Vectormike40/Weather_Teller/static/js/runtime~main.301e3dc2.js.map",
-  "static/css/2.3883dd12.chunk.css": "/Vectormike40/Weather_Teller/static/css/2.3883dd12.chunk.css",
-  "static/js/2.b9f09ead.chunk.js": "/Vectormike40/Weather_Teller/static/js/2.b9f09ead.chunk.js",
-  "static/js/2.b9f09ead.chunk.js.map": "/Vectormike40/Weather_Teller/static/js/2.b9f09ead.chunk.js.map",
-  "index.html": "/Vectormike40/Weather_Teller/index.html",
-  "precache-manifest.f2efef6761986c9a50b07865c9dbf967.js": "/Vectormike40/Weather_Teller/precache-manifest.f2efef6761986c9a50b07865c9dbf967.js",
-  "service-worker.js": "/Vectormike40/Weather_Teller/service-worker.js",
-  "static/css/2.3883dd12.chunk.css.map": "/Vectormike40/Weather_Teller/static/css/2.3883dd12.chunk.css.map",
-  "static/css/main.a4d83100.chunk.css.map": "/Vectormike40/Weather_Teller/static/css/main.a4d83100.chunk.css.map"
+  "main.css": "/weatherteller/static/css/main.a4d83100.chunk.css",
+  "main.js": "/weatherteller/static/js/main.29abc85c.chunk.js",
+  "main.js.map": "/weatherteller/static/js/main.29abc85c.chunk.js.map",
+  "runtime~main.js": "/weatherteller/static/js/runtime~main.78deac08.js",
+  "runtime~main.js.map": "/weatherteller/static/js/runtime~main.78deac08.js.map",
+  "static/css/2.3883dd12.chunk.css": "/weatherteller/static/css/2.3883dd12.chunk.css",
+  "static/js/2.b9f09ead.chunk.js": "/weatherteller/static/js/2.b9f09ead.chunk.js",
+  "static/js/2.b9f09ead.chunk.js.map": "/weatherteller/static/js/2.b9f09ead.chunk.js.map",
+  "index.html": "/weatherteller/index.html",
+  "precache-manifest.cd31be8fbc7a4569bf25a296e4fd61ee.js": "/weatherteller/precache-manifest.cd31be8fbc7a4569bf25a296e4fd61ee.js",
+  "service-worker.js": "/weatherteller/service-worker.js",
+  "static/css/2.3883dd12.chunk.css.map": "/weatherteller/static/css/2.3883dd12.chunk.css.map",
+  "static/css/main.a4d83100.chunk.css.map": "/weatherteller/static/css/main.a4d83100.chunk.css.map"
 }
